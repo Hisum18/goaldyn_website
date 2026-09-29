@@ -23,6 +23,7 @@
 <meta name="twitter:description" content="A calm, private planner for tasks, habits, and deep focus — everything stays on your iPhone.">
 <meta name="twitter:image" content="https://goaldyn.nrdyn.com/assets/og-image.png">
 <link rel="stylesheet" href="assets/site.css">
+<script>document.documentElement.classList.add('js');</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -54,7 +55,7 @@
   <nav class="nav">
     <a class="brand" href="index.html"><img src="assets/apple-touch-icon.png" alt="" width="36" height="36">Goaldyn</a>
     <div class="nav-links">
-      <a href="index.html#features">Features</a>
+      <a href="features.html">Features</a>
       <a href="privacy.html">Privacy</a>
       <a href="support.html">Support</a>
       <a class="btn" href="https://apps.apple.com/us/app/goaldyn/id6793334193">Get it free</a>
@@ -62,53 +63,61 @@
   </nav>
 
   <header class="hero">
-    <div>
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-copy reveal">
       <img class="hero-icon" src="assets/icon-512.png" alt="Goaldyn app icon" width="96" height="96">
-      <h1>Goaldyn</h1>
-      <p class="tag">Tasks, habits, focus &amp; goals — in one calm, private planner.</p>
+      <p class="eyebrow hero-eyebrow">Goaldyn for iPhone</p>
+      <h1>Tasks, habits, focus <span class="grad">&amp; goals</span>.</h1>
+      <p class="tag">One calm, private planner for your whole day.</p>
       <p class="sub">A to-do list that understands "pay rent tomorrow at 9am", a habit tracker that keeps your streaks honest, a Pomodoro focus timer, and a calendar that stays in sync with Apple Calendar. No account. No ads. Nothing leaves your iPhone.</p>
       <div class="cta">
         <a class="badge" href="https://apps.apple.com/us/app/goaldyn/id6793334193" aria-label="Download Goaldyn on the App Store"><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="163" height="54"></a>
+        <a class="ghost-link" href="features.html">See how it works <span aria-hidden="true">→</span></a>
       </div>
-      <p class="fine">Free · iPhone · iOS 17 or later · Data Not Collected</p>
+      <p class="fine">Free · iPhone · iOS 17 or later</p>
     </div>
-    <div class="phone"><img src="assets/screens/01-tasks.png" alt="Goaldyn task list with due dates color-coded by urgency" width="640" height="1385"></div>
+    <div class="hero-visual reveal">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="phone"><img src="assets/screens/01-tasks.png" alt="Goaldyn task list with due dates color-coded by urgency" width="640" height="1385"></div>
+      <span class="float-pill pill-1" aria-hidden="true"><svg class="icon-solid" viewBox="0 0 24 24"><path d="M12 2c.4 3.7 2.3 5.6 6 6-3.7.4-5.6 2.3-6 6-.4-3.7-2.3-5.6-6-6 3.7-.4 5.6-2.3 6-6z"/></svg>"pay rent tomorrow 9am"</span>
+      <span class="float-pill pill-2" aria-hidden="true"><svg class="icon-solid" viewBox="0 0 24 24"><path d="M12 2c3 3 4.6 5.5 4.6 8.5a4.6 4.6 0 0 1-9.2 0c0-1.3.5-2.4 1.2-3.2.1 1.1.7 1.9 1.7 2.2-.6-2 .3-4.6 1.7-7.5z"/></svg>12-day streak</span>
+    </div>
   </header>
 
-  <section id="features">
-    <p class="eyebrow">Everything in one place</p>
-    <h2 class="title">Plan the day, keep the habit, finish the work.</h2>
-    <p class="lede">Most planners make you juggle three apps. Goaldyn puts tasks, habits, focus time, and goals on one screen, so the plan and the follow-through live together.</p>
-    <div class="grid">
-      <div class="card"><div class="ico">✅</div><h3>Tasks that stay out of your way</h3><p>Type or dictate "call the dentist tomorrow at 2pm" and it's scheduled. Lists, tags, priorities, subtasks, and due dates color-coded by urgency — overdue, today, tomorrow, later.</p></div>
-      <div class="card"><div class="ico">🔁</div><h3>Habits that stick</h3><p>Daily, weekly, or specific-day schedules. Streaks and consistency over the last 7, 30, or 90 days, and one-tap check-ins from the app or a widget.</p></div>
-      <div class="card"><div class="ico">⏱️</div><h3>Deep focus</h3><p>A Pomodoro-style timer with short and long breaks, a live countdown in the Dynamic Island and on the Lock Screen, and focus time that adds up per task or habit.</p></div>
-      <div class="card"><div class="ico">📅</div><h3>Calendar, both ways</h3><p>Day, week, and month views. Tap an empty slot to create a task right there. Two-way sync with Apple Calendar — move something in either app and the other follows.</p></div>
-      <div class="card"><div class="ico">🔲</div><h3>The Eisenhower matrix</h3><p>Sort everything by urgent and important, and see at a glance what to do first, schedule, delegate, or drop.</p></div>
-      <div class="card"><div class="ico">📈</div><h3>Progress you can feel</h3><p>Completion, habit consistency, and goal momentum at a glance. Track goals with targets and units — books read, miles run, anything.</p></div>
+  <section id="highlights">
+    <div class="reveal center">
+      <p class="eyebrow">Everything in one place</p>
+      <h2 class="title">Plan the day, keep the habit, finish the work.</h2>
+      <p class="lede">Most planners make you juggle three apps. Goaldyn puts tasks, habits, focus time, and goals on one screen — so the plan and the follow-through live together.</p>
     </div>
-  </section>
-
-  <section id="screens">
-    <p class="eyebrow">A look inside</p>
-    <h2 class="title">Calm by design.</h2>
-    <div class="shots">
-      <figure class="shot"><img src="assets/screens/01-tasks.png" alt="Tasks tab" width="640" height="1385" loading="lazy"><figcaption>Tasks with urgency colors</figcaption></figure>
-      <figure class="shot"><img src="assets/screens/02-habits.png" alt="Habits tab with streaks" width="640" height="1385" loading="lazy"><figcaption>Habits and streaks</figcaption></figure>
-      <figure class="shot"><img src="assets/screens/03-calendar.png" alt="Week calendar view" width="640" height="1385" loading="lazy"><figcaption>Week view, synced with Apple Calendar</figcaption></figure>
-      <figure class="shot"><img src="assets/screens/04-focus.png" alt="Focus timer running" width="640" height="1385" loading="lazy"><figcaption>Focus timer</figcaption></figure>
-      <figure class="shot"><img src="assets/screens/05-progress.png" alt="Progress overview with goals" width="640" height="1385" loading="lazy"><figcaption>Progress and goals</figcaption></figure>
+    <div class="grid reveal">
+      <div class="card">
+        <div class="ico"><svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="m9 11 3 3L22 4"/></svg></div>
+        <h3>Tasks</h3>
+        <p>Type or dictate "call the dentist tomorrow at 2pm" and it's scheduled — with lists, tags, priorities, and due dates color-coded by urgency.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg></div>
+        <h3>Habits</h3>
+        <p>Daily, weekly, or specific-day schedules, honest streaks, and one-tap check-ins from the app or a Home Screen widget.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Focus</h3>
+        <p>A Pomodoro timer with breaks, a live countdown in the Dynamic Island and Lock Screen, and focus time that adds up per task.</p>
+      </div>
     </div>
+    <p class="center" style="margin-top:28px"><a class="section-link" href="features.html">See all features <span aria-hidden="true">→</span></a></p>
   </section>
 
   <section id="privacy">
-    <div class="privacy">
+    <div class="privacy reveal">
       <div>
         <p class="eyebrow">Private by design</p>
         <h2 class="title">Your plans are nobody's business.</h2>
         <p class="lede" style="margin-bottom:0">Goaldyn's App Store privacy label is "Data Not Collected" — and that's the whole architecture, not a setting.</p>
       </div>
-      <ul>
+      <ul class="checklist">
         <li>No account and no sign-in — the app works the moment it's installed.</li>
         <li>No ads, no analytics, no tracking, no third-party SDKs.</li>
         <li>Everything is stored on your device. Calendar and voice features use Apple's own on-device frameworks with your permission.</li>
@@ -118,7 +127,7 @@
   </section>
 
   <section>
-    <div class="cta-band">
+    <div class="cta-band reveal">
       <h2>Free on the App Store</h2>
       <p>For iPhone, iOS 17 or later. Home Screen widgets and Siri Shortcuts included.</p>
       <a class="badge" href="https://apps.apple.com/us/app/goaldyn/id6793334193" aria-label="Download Goaldyn on the App Store"><img src="assets/app-store-badge.svg" alt="Download on the App Store" width="163" height="54"></a>
@@ -126,9 +135,26 @@
   </section>
 
   <footer>
-    <div><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a><a href="mailto:info@nrdyn.com">info@nrdyn.com</a></div>
+    <div><a href="features.html">Features</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="mailto:info@nrdyn.com">info@nrdyn.com</a></div>
     <div>© 2026 Nrdyn LLC. Apple, the Apple logo, iPhone, and App Store are trademarks of Apple Inc.</div>
   </footer>
 </div>
+<script>
+  // Reveal-on-scroll — progressive enhancement, gated on reduced-motion.
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
 </body>
 </html>
